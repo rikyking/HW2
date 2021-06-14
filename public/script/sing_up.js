@@ -121,7 +121,7 @@ function checkPassword(event){
     const input=event.currentTarget;
     var pattern=/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[_.\-()?#;:!@])[0-9A-Za-z_.\-()?#;:!@]{8,20}$/;
     if(!pattern.test(input.value)) {
-        document.querySelector("#idPassword .errore").textContent="La password non rispetta i requisiti, contralla la sezione"
+        document.querySelector("#idPassword .errore").textContent="La password non rispetta i requisiti, controlla la sezione"
         input.parentNode.classList.add('error');
         formStatus.password = false;
     } else {
